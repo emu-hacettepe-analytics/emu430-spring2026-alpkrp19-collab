@@ -5,26 +5,38 @@ sidebar: false
 
 # Education
 
--   B.S., Industrial Engineering, Hacettepe University, Turkey, 20xx - ongoing.
+-   B.S., Industrial Engineering, Hacettepe University, Turkey, 2021 - ongoing.
 
 # Work Experience
 
-## Employements
-
-1.  Firm xxx, position xx, year xxx
-
-2.  Firm yyy, position yyy, year yyy
-
 ## Internships
 
-1.  Firm aaa, position xx, year xxx
+1.  ROKETSAN, Quality Analytics Intern, year 2025
 
-2.  Firm bbb, position yyy, year yyy
+2.  Havelsan Teknoloji Radar HTR, Production Planning Intern, year 2025
+
+3.  TURKCELL, Process Development Intern, year 2025
 
 # Projects
 
+AI-Assisted Workforce Allocation and Skill Gap Analysis (Graduation Project)
+
+Developing a decision-support system for workforce allocation and competency gap analysis in defense industry organizations.\
+The project integrates relational database modeling, heuristic data generation, competency gap analysis, and optimization models.
+
+Key methodologies include: - Relational database design (3NF) for employee–skill–role data modeling - Competency match scoring using weighted skill evaluation - Workforce allocation optimization using the Hungarian Algorithm - Project team formation using a Set Covering optimization model
+
+The system aims to identify skill mismatches, improve internal mobility decisions, and support efficient project team formation.
+
 # Competencies
 
-R, Quarto, Git, Python
+Python, SQL, Quarto, Git, Data Analysis, Optimization Modeling, Relational Database Design, MS Office, AutoCad
 
 # Hobbies
+
+Football, Horseback Riding, Strategy Games, Table Tennis, Technology and AI
+
+
+# Download CV
+
+[Download my CV (PDF)](alp_karapicak_cv.pdf.pdf)

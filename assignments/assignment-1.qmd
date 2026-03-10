@@ -4,12 +4,90 @@ title: "Assignment 1"
 
 # Assignment 1
 
+
+## (a) Video Summary
+
+In the talk, Kerem Demirtaş describes his career path and experiences in data science and optimization. He talks about his background in Industrial Engineering and his work at companies such as Intel, Spike Games, and Invent Analytics.
+
+One of the main points of the talk is that data science is often misunderstood. According to Demirtaş, data science is not only about statistics or machine learning; it combines statistics, programming, domain knowledge, and analytical thinking to extract meaningful insights from data. He also emphasizes that asking the right question is often more important than building the model itself.
+
+Demirtaş explains the typical workflow of a data science project: defining the problem, collecting and preparing data, performing exploratory data analysis, building and evaluating models, and finally deploying them in real systems. He notes that models are rarely perfect and need continuous monitoring and updates.
+
+He also highlights the importance of domain knowledge. Without understanding the context of the industry, it is difficult to interpret results correctly. Therefore, successful data scientists combine technical skills with knowledge of the field they work in.
+
+## (b) Open-Ended Question
+
+Why does Kerem Demirtaş emphasize the importance of domain knowledge in data science?
+
+Answer: Kerem Demirtaş explains that domain knowledge is necessary because data science problems are closely connected to the real-world context in which they appear. Even if someone knows programming and machine learning, they may misunderstand the data or the objective of the problem if they do not understand the field itself. Domain knowledge helps data scientists interpret results correctly, ask better questions, and design models that actually solve the intended problem. Without this knowledge, the analysis may produce technically correct results but still fail to provide useful insights.
+
+***\*Note: This answer was generated with the assistance of AI.***
+
+## (c) Multiple Choice Question
+
+According to the talk, which statement best describes data science?v
+
+A)  It is simply another form of statistics.
+B)  It mainly focuses on building machine learning models.
+C)  It is an interdisciplinary field combining statistics, programming, and domain knowledge.
+D)  It only works when there is a large amount of data.
+
+Correct Answer: C) It is an interdisciplinary field combining statistics, programming, and domain knowledge.
+
+
+---
+title: "Assignment 1"
+format: html
+---
+
+## Task 3
+
+Buraya yazın...
+
+## Task 4
+
 ```{r}
-1 + 1
+#| message: false
+#| warning: false
+
+library(dslabs)
+data("polls_us_election_2016")
+
+my_first <- "Alp"
+my_birth_year <- 2003
+k <- (nchar(my_first) + my_birth_year) %% 15 + 8
+
+print(paste("My k value is:", k))
+
+if (k %% 2 == 0) {
+  head(polls_us_election_2016, k)
+} else {
+  tail(polls_us_election_2016, k)
+}
+
+total_na <- sum(is.na(polls_us_election_2016))
+print(paste("Total NA count:", total_na))
+
+na_per_column <- sort(colSums(is.na(polls_us_election_2016)), decreasing = TRUE)
+head(na_per_column, 8)
+
+new_data <- polls_us_election_2016
+
+for (col in names(new_data)) {
+  if (is.numeric(new_data[[col]])) {
+    new_data[[col]][is.na(new_data[[col]])] <- my_birth_year + k
+  } else if (is.character(new_data[[col]]) || is.factor(new_data[[col]])) {
+    new_data[[col]] <- as.character(new_data[[col]])
+    new_data[[col]][is.na(new_data[[col]])] <- paste0(my_first, "_", k)
+  }
+}
+
+if (k %% 2 == 0) {
+  head(new_data, k)
+} else {
+  tail(new_data, k)
+}
+
+print(paste("Remaining NAs:", sum(is.na(new_data))))
+print(paste("Are there any NAs left?:", anyNA(new_data)))
 ```
-
-My first assignment has two parts.
-
-## (a)
-
-## (b)

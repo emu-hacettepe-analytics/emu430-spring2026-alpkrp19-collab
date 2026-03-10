@@ -1,12 +1,13 @@
 ---
-title: "Welcome to My Analytics Lab"
+title: "Alp Çağrı Karapıçak's Portfolio"
 sidebar: false 
 ---
 
-Hello! My name is xxx xxxx.
-
-This is my personal webpage.
-
-Please stay tuned to follow my works on data analytics, blog posts, and more.
-
-This is our template.
+Hello! My name is Alp Çağrı Karapıçak.\
+\
+I am a senior Industrial Engineering student at Hacettepe University. \
+This website is part of my EMU430 Data Analytics coursework, where I share assignments, analyses, and projects related to data analytics and industrial engineering.\
+\
+Here you can find my coursework, coding exercises, and other materials that reflect my learning journey in data analytics.\
+\
+Thank you for visiting my webpage.
